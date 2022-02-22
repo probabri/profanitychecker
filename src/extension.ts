@@ -45,19 +45,18 @@ export function activate(context: vscode.ExtensionContext) {
 					
 					if(filter.isUnclean(tokenizedLine[j])) {
 						profanityFlag = true;
-						profanityOutput.append('Profane word detected at line: ' + (i+1) + '\n');
+						profanityOutput.append('PROFANITY ON LINE: ' + (i+1) + '\n \t  "' + tokenizedLine[j] + '" flagged as profane\n');
 						profanityOutput.show();
-						
 					}
 				}
 			}
 
 			if(profanityFlag){
-				profanityOutput.append('-- Profanity Found -- ');
+				profanityOutput.append('\n-- Profanity Found -- ');
 				profanityOutput.show();
 			}
 			else{
-				profanityOutput.append('-- Document clean from profanity --');
+				profanityOutput.append('\n-- Document clean from profanity --');
 				profanityOutput.show();
 			}
 			
@@ -104,7 +103,7 @@ export function activate(context: vscode.ExtensionContext) {
 					}
 					for(let j=0; j < swearList.length ; j++){
 						if(tokenizedLine[m].includes(swearList[j])){
-							profanityOutput.append('Profane word found on line: ' + (i+1) + '\n' + tokenizedLine[m] + '\n Contains Profane Word: ' + swearList[j] + '\n');
+							profanityOutput.append('PROFANITY ON LINE: ' + (i+1) + '\n \t"' + tokenizedLine[m] + '"\n\tContains Profane Word: ' + swearList[j] + '\n');
 							profanityOutput.show();
 							profanityFlag = true;
 							break; //break because if there's one swear word in a word, you don't need to find it twice e.g. shit & shithead
