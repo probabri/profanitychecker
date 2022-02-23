@@ -27,9 +27,9 @@ None at present.
 ## Release Notes
 
 
-### 1.0.0
+### 0.0.1
 
-Initial release of Profanity Checker extension
+Beta release of Profanity Checker extension. 
 
 
 -----------------------------------------------------------------------------------------------------------
