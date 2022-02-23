@@ -10,10 +10,6 @@ export function activate(context: vscode.ExtensionContext) {
 	// This line of code will only be executed once when your extension is activated
 	console.log('Congratulations, your extension "profanitychecker" is now active!');
 
-	// The command has been defined in the package.json file
-	// Now provide the implementation of the command with registerCommand
-	// The commandId parameter must match the command field in package.json
-
 	let disposable = vscode.commands.registerCommand('profanitychecker.runProfanityChecker', () => {
 
 		//Define the editor as the active window
@@ -70,7 +66,6 @@ export function activate(context: vscode.ExtensionContext) {
 		//Define the editor as the active window
 		const editor = vscode.window.activeTextEditor;
 		
-		//TO DO: Test heavily and think about if I actually need to tokenize.
 		if(editor){
 
 			const document = editor.document; //Define the document as the open editor window document.
@@ -127,6 +122,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 		context.subscriptions.push(disposable);
 		context.subscriptions.push(disposable2);
+		
 
 		
 }
