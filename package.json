@@ -1,7 +1,8 @@
 {
 	"name": "profanitychecker",
 	"displayName": "ProfanityChecker",
-	"description": "Parse code and check for profane words",
+	"description": "Check for profane words in code editor.",
+	"repository": "https://github.com/probabri/profanitychecker",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.64.0"
