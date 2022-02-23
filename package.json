@@ -1,5 +1,6 @@
 {
 	"name": "profanitychecker",
+	"publisher": "probabri",
 	"displayName": "ProfanityChecker",
 	"description": "Check for profane words in code editor.",
 	"repository": "https://github.com/probabri/profanitychecker",
