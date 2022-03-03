@@ -11,7 +11,7 @@
 	"categories": [
 		"Other"
 	],
-	"icon" : "https://i.imgur.com/01yZNbH.png",
+	"icon" : "ProfanityCheckerIcon.png",
 	"activationEvents": [
 		"onCommand:profanitychecker.runProfanityChecker",
 		"onCommand:extremeprofanitychecker.runExtremeProfanityChecker"
