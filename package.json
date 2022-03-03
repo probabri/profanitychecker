@@ -4,13 +4,14 @@
 	"displayName": "ProfanityChecker",
 	"description": "Check for profane words in code editor.",
 	"repository": "https://github.com/probabri/profanitychecker",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"engines": {
 		"vscode": "^1.64.0"
 	},
 	"categories": [
 		"Other"
 	],
+	"icon" : "https://i.imgur.com/01yZNbH.png",
 	"activationEvents": [
 		"onCommand:profanitychecker.runProfanityChecker",
 		"onCommand:extremeprofanitychecker.runExtremeProfanityChecker"
