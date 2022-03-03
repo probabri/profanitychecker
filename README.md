@@ -44,4 +44,4 @@ Beta release of Profanity Checker extension.
 
 ### 0.0.2
 
-
+Updated ReadMe.md with screenshots as well as added more common code terms to the exceptions list.
